@@ -1,3 +1,4 @@
+//Creo un array di elementi
 var whatsupp = new Vue({
  el:"#contatti",
  data:{
