@@ -1,0 +1,77 @@
+
+
+/*whatsupp*/
+
+/*prima*/
+#aside{
+    width:35%;
+}
+
+#myname_bar{
+    display:flex;
+    justify-content: space-between;
+    background-color:#eaeaea;
+}
+
+#avatar > img{
+    width: 15%;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#avatar > h5{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#interactions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#interactions > i{
+    padding: 20px;
+    color: gray;
+}
+
+/*seconda*/
+
+#notifiche{
+    display: flex;
+    line-height: 0;
+    padding:10px;
+    background-color:#8ddafc;
+}
+
+#notifiche > i {
+    padding:0;
+    line-height: 2;
+    margin:0 10px;
+}
+
+/*terza*/
+
+#write{
+    width:90%;
+    height: 30px;
+    margin: 20px 15px;
+}
+
+/*quarta*/
+
+.messages{
+    display:flex;
+    border-bottom:1px solid rgb(197, 197, 197);
+    padding: 20px;
+}
+
+.messages > img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.messages > p{
+    margin-left: 20px;
+}
