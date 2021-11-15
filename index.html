@@ -48,12 +48,12 @@
                 </div>
 
                 <div id="contatti">
-                    <!--
-                    <div class="messages">
-                        <img src="img\avatar_1.jpg" alt="avatar_1">
-                        <p>Michele</p>
+                    
+                    <div v-for="slide in persone" class="messages">
+                        <img :src="slide.image" :alt="slide.text">
+                        <p>{{slide.text}}</p>
                     </div>
-
+                    <!--
                     <div class="messages">
                         <img src="img\avatar_2.jpg" alt="avatar_2">
                         <p>Fabio</p>
@@ -88,6 +88,10 @@
 
         </div>
     </div>
+
+
+    <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js\script.js"></script>
     
 </body>
 </html>
