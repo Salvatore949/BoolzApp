@@ -49,9 +49,9 @@
 
                 <div id="contatti">
                     
-                    <div v-for="slide,i in contacts" class="messages" :key="1">
-                        <img :src="slide.avatar" :alt="slide.name">
-                        <p>{{slide.name}}</p>
+                    <div v-for="contatto_,i in contacts" @click="single_card(contatto_)" class="messages" :key="1"  :class="{'verde':contatto_.visible ? true : null}">
+                        <img :src="contatto_.avatar" :alt="contatto_.name">
+                        <p>{{contatto_.name}}</p>
                     </div>
 
                 </div>
@@ -66,9 +66,9 @@
                 
                 <!--Blocco messaggi principale-->
 
-                <div id="message_area" v-for="element, i in contacts" :key="1">
+                <div id="message_space" v-for="element, i in contacts" :key="1">
 
-                    <div id="chat_box" v-for="sms, in element.messages">
+                    <div id="chat_box" v-for="sms, in element.messages" v-if =" element.visible === true ">
                         <span>{{sms.text}}</span>
                     </div>
                 </div>
