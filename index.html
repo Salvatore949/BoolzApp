@@ -53,38 +53,32 @@
                         <img :src="slide.avatar" :alt="slide.name">
                         <p>{{slide.name}}</p>
                     </div>
-                    <!--
-                    <div class="messages">
-                        <img src="img\avatar_2.jpg" alt="avatar_2">
-                        <p>Fabio</p>
-                    </div>
 
-                    <div class="messages">
-                        <img src="img\avatar_3.jpg" alt="avatar_3">
-                        <p>Samuele</p>
-                    </div>
-
-                    <div class="messages">
-                        <img src="img\avatar_4.jpg" alt="avatar_4">
-                        <p>Luisa</p>
-                    </div>
-                    -->
                 </div>
             </section>
             <!--right-->
             <section id="chat">
-                <div id="on_line">
-                    <img src="img\avatar_1.jpg" alt="avatar_1">
-                     <p> <span id="p_span">Michele</span> <br>
-                         Ultimo accesso oggi alle 10/01/2020 16:15:22</p>
+                    <div id="on_line">
+                        <img src="img\avatar_1.jpg" alt="avatar_1">
+                        <p> <span id="p_span">Michele</span> <br>
+                            Ultimo accesso oggi alle 10/01/2020 16:15:22</p>
+                    </div>
+                
+                <!--Blocco messaggi principale-->
+
+                <div id="message_area" v-for="element, i in contacts" :key="1">
+
+                    <div id="chat_box" v-for="sms, in element.messages">
+                        <span>{{sms.text}}</span>
+                    </div>
                 </div>
-                <div id="chat_box">
-                </div>
+
                 <div id="message_bar">
                     <i class="far fa-smile"></i>
                     <div id="barra"></div>
                     <i class="fas fa-microphone"></i>
                 </div>
+
             </section>
 
         </div>
