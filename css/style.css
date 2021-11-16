@@ -13,17 +13,22 @@
     justify-content: space-between;
     background-color:#eaeaea;
 }
-
-#avatar > img{
-    width: 51px;
-    border-radius: 50%;
-    margin-top: 15px;
+#avatar{
+    display: flex;
+    height: 10vh;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
+#avatar > img{
+    border-radius: 50%;
+    height: 50px;
+}
+
 #avatar > h5{
-    display: inline-block;
     margin-left: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
 }
 
 #interactions{
@@ -84,14 +89,27 @@
 }
 
 #on_line{
-    height:7vh;
+    height:11vh;
     display:flex;
-    padding: 20px;
 }
 
 #on_line > img{
     border-radius: 50%;
+    margin-top: 10px;
     margin-left: 10px; 
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#on_line > p{
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#p_span{
+    font-weight: 700;
 }
 
 #chat_box{
