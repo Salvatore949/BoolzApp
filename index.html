@@ -58,24 +58,29 @@
             </section>
             <!--right-->
             <section id="chat">
-                    <div id="on_line">
-                        <img src="img\avatar_1.jpg" alt="avatar_1">
-                        <p> <span id="p_span">Michele</span> <br>
-                            Ultimo accesso oggi alle 10/01/2020 16:15:22</p>
-                    </div>
+                <div id="on_line">
+                    <img src="img\avatar_1.jpg" alt="avatar_1">
+                    <p> <span id="p_span">Michele</span> <br>
+                        Ultimo accesso oggi alle 10/01/2020 16:15:22</p>
+                </div>
                 
                 <!--Blocco messaggi principale-->
-
-                <div id="message_space" v-for="element, i in contacts" :key="1">
-
-                    <div id="chat_box" v-for="sms, in element.messages" v-if =" element.visible === true ">
-                        <span>{{sms.text}}</span>
+                <div id="main_space">
+                    <div id="message_space" v-for="element, i in contacts" :key="1">
+                        <div id="chat_box" v-for="sms, in element.messages" 
+                        v-if =" element.visible === true ">
+                            <span>{{sms.text}}</span>
+                        </div>
                     </div>
                 </div>
 
+            <!--Blocco messaggi principale-->
+
                 <div id="message_bar">
                     <i class="far fa-smile"></i>
-                    <div id="barra"></div>
+                    <input type="text" v-model="newMessage" placeholder="Text">
+                    <p v-if="visualizzaOk === true">ok</p>
+                    <button @click="AggiungiMessagio()"> invia</button>
                     <i class="fas fa-microphone"></i>
                 </div>
 
@@ -85,7 +90,7 @@
     </div>
 
 
-    <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="js\script.js"></script>
     
 </body>

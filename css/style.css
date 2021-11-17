@@ -88,9 +88,8 @@
     width: 65%;
 }
 
-#on_line{
-    height:11vh;
-    display:flex;
+#main_space{
+    height: 70vh;
 }
 
 #on_line > img{
@@ -113,9 +112,13 @@
 }
 
 #chat_box{
-    background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?auto=webp&s=172adf428061ec1b71c0d43b7ba870f85d46a816');
-    min-height: 75vh;
-    width: 100%;
+    padding: 30px 0 ;
+}
+
+#chat_box span{
+    background-color: green;
+    padding: 10px;
+    
 }
 
 /*TERZA PARTE*/

@@ -5,6 +5,8 @@
 var whatsupp = new Vue({
     el:"#container",
     data:{
+      newMessage : "",  
+      visualizzaOk: false,      
       contacts: [
                {
                    name: 'Michele',
@@ -54,7 +56,7 @@ var whatsupp = new Vue({
                {
                    name: 'Samuele',
                    avatar: 'img/avatar_3.jpg',
-                   visible: false,                                                                                                                                                              
+                   visible: false,
                    messages: [
                            {
                                date: '28/03/2020 10:10:40',
@@ -86,10 +88,11 @@ var whatsupp = new Vue({
                        {
                        date: '10/01/2020 15:50:00',
                        text: 'Si, ma preferirei andare al cinema',
-                       status: 'received'
-                       }
+                       status: 'received',
+                       },
                    ],
                },
+               
         ],
     },
 
@@ -98,9 +101,20 @@ var whatsupp = new Vue({
             for(let i = 0; i < this.contacts.length; i++){
             this.contacts[i].visible = false}
             utenteSelezionato.visible = true
-        }
+        },
     
+        AggiungiMessagio(){
+                for(let i = 0; i < this.contacts.length; i++ ){
+                console.log(this.newMessage)
+                if (this.contacts[i].visible === true){
+                    this.contacts[i].messages.push({text:this.newMessage}); 
+                }
 
+                setTimeout(() => {
+                  this.visualizzaOk = true;
+                }, 1000 )
+            }
+        }
     },
 
        
