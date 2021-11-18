@@ -1,18 +1,26 @@
+/* sezione sinistra */
 
-
-/*whatsupp*/
-
-/*prima*/
 #aside{
-    width:35%;
+    width:30%;
     float: left;
 }
+
+/* barra nome e avatar */
 
 #myname_bar{
     display:flex;
     justify-content: space-between;
-    background-color:#eaeaea;
+    background-color:#eaeaea98;
 }
+
+#search{
+    display: flex;
+}
+
+#search > i{
+    margin-top: 20px;
+}
+
 #avatar{
     display: flex;
     height: 10vh;
@@ -42,7 +50,7 @@
     color: gray;
 }
 
-/*seconda*/
+/*Notifiche di nuovi messaggi*/
 
 #notifiche{
     display: flex;
@@ -57,7 +65,7 @@
     margin:0 10px;
 }
 
-/*terza*/
+/* Barra di ricerca */
 
 #write{
     width:90%;
@@ -65,7 +73,12 @@
     margin: 20px 15px;
 }
 
-/*quarta*/
+#barra{
+    height:20px;
+    border: 1px solid grey;
+}
+
+/* Lista dei contatti */
 
 .messages{
     display:flex;
@@ -82,23 +95,53 @@
     margin-left: 20px;
 }
 
-/*RIGHT*/
+.verde{
+    background-color: green;
+}
+
+/*Right part*/
+
 #chat{
     float: right;
-    width: 65%;
+    width: 70%;
+}
+
+#on_line_box{
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+#on_line_box_i{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+#on_line_box_i > i{
+    padding: 0 15px;
+    color: grey;
 }
 
 #main_space{
-    height: 70vh;
+    height: 75vh;
+}
+
+#on_line{
+    display: flex;
 }
 
 #on_line > img{
     border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px; 
     display: flex;
     align-items: center;
-    height: 50px;
+    height:50px;
+    margin: 15px 0 18px 15px;
+}
+
+#p_span{
+    margin: 35px 0 18px 15px;
+    font-weight: 700;
 }
 
 #on_line > p{
@@ -107,9 +150,7 @@
     line-height: 20px;
 }
 
-#p_span{
-    font-weight: 700;
-}
+/*Blocco messaggi principale*/
 
 #chat_box{
     padding: 30px 0 ;
@@ -121,7 +162,7 @@
     
 }
 
-/*TERZA PARTE*/
+/*Parte destra add message*/
 
 #message_bar{
     display: flex;
@@ -130,12 +171,14 @@
     height:11vh;
 }
 
-#barra{
-    width:80%;
-    height:20px;
-    border: 1px solid grey;
+#add_message{
+    width: 70%;
+    height: 40px;
+    color: gray;
 }
 
-.verde{
-    background-color: green;
+#message_bar > i{
+    color: gray;
+    padding:25px;
 }
+

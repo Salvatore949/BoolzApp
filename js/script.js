@@ -1,17 +1,15 @@
-//Creo un array di elementi
-// ● Visualizzazione dinamica dei messaggi: t ramite l a direttiva v-for, visualizzare t utti i
-// messaggi relativi al contatto attivo all’interno del pannello della conversazione
-// ● Click sul contatto mostra l a conversazione del contatto cliccato
 var whatsupp = new Vue({
     el:"#container",
     data:{
-      newMessage : "",  
-      visualizzaOk: false,      
-      contacts: [
-               {
+      newMessage : "",
+      confront : "", 
+      visualizzaOk: false, 
+      
+      contacts: [{
                    name: 'Michele',
                    avatar: 'img/avatar_1.jpg',
                    visible: true,
+                   
                    messages: [
                        {
                            date: '10/01/2020 15:30:55',
@@ -116,6 +114,4 @@ var whatsupp = new Vue({
             }
         }
     },
-
-       
 });
