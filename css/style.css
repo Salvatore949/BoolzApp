@@ -73,6 +73,12 @@
     margin: 20px 15px;
 }
 
+#search > i{
+    color: gray;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
 #barra{
     height:20px;
     border: 1px solid grey;
@@ -96,7 +102,21 @@
 }
 
 .verde{
-    background-color: green;
+    background-color: #d5f9ba;
+    float:right;
+    margin-right:50px ;
+    border-radius: 5px;
+}
+
+.blu{
+    background-color: #ffffff;
+    float:left;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+.grigio{
+    background-color: #e8ebeb;
 }
 
 /*Right part*/
@@ -115,16 +135,17 @@
 #on_line_box_i{
     display: flex;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 #on_line_box_i > i{
-    padding: 0 15px;
+    padding: 0 20px;
     color: grey;
 }
 
 #main_space{
-    height: 75vh;
+    height: 76vh;
+    background-image:url("../img/sfondo.webp") ;
 }
 
 #on_line{
@@ -157,7 +178,6 @@
 }
 
 #chat_box span{
-    background-color: green;
     padding: 10px;
     
 }
@@ -166,6 +186,7 @@
 
 #message_bar{
     display: flex;
+    background-color: #f3eee9;
     justify-content:space-around;
     align-items:center;
     height:11vh;
@@ -180,5 +201,12 @@
 #message_bar > i{
     color: gray;
     padding:25px;
+
+}
+
+#message_bar > button{
+    color: gray;
+    background-color: #f3eee9;
+    border: #f3eee9;
 }
 

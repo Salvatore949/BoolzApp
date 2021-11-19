@@ -1,3 +1,4 @@
+
 var whatsupp = new Vue({
     el:"#container",
     data:{
@@ -105,7 +106,7 @@ var whatsupp = new Vue({
                 for(let i = 0; i < this.contacts.length; i++ ){
                 console.log(this.newMessage)
                 if (this.contacts[i].visible === true){
-                    this.contacts[i].messages.push({text:this.newMessage}); 
+                    this.contacts[i].messages.push({status: 'sent', text:this.newMessage}); 
                 }
 
                 setTimeout(() => {
